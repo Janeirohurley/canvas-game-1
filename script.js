@@ -215,7 +215,7 @@ function animate(){
 
 
 
-window.addEventListener("click",(event) => {
+window.addEventListener("mousemove",(event) => {
 
 	const angle = Math.atan2(event.clientY - canvas.height / 2,event.clientX - canvas.width / 2);
 	const volacity = {
@@ -227,7 +227,7 @@ window.addEventListener("click",(event) => {
 
 
 
-startButton.addEventListener("dblclick",()=>{
+startButton.addEventListener("click",()=>{
 	parentModal.classList.add("active")
 	init()
 	score.innerText =note
